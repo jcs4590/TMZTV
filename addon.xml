@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.tmztv" name="TMZ TV" version="0.0.1" provider-name="Julio Salamanca">
+<addon id="plugin.video.tmztv" name="TMZ TV" version="1.0.0" provider-name="Julio Salamanca">
   
   <requires>
     <import addon="xbmc.python" version="2.7.6"/>
@@ -23,14 +23,14 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Watch the latest TMZ empisodes!</summary>
     
-    <description lang="en">View the latest TMZ episode. </description>
+    <description lang="en">Watch TMZ episodes. This add-on will let you watch TMZ episodes that are new and old.. The episodes are saved longer than the usual two days that are allowed on the TMZ Website.  </description>
     <disclaimer lang="en"></disclaimer>
     <language>en</language>
     <platform>all</platform>
     <license></license>
     <forum></forum>
     <website></website>
-    <email></email>
+    <email>jcs45901@yahoo.com</email>
     <source></source> 
   </extension>
 
