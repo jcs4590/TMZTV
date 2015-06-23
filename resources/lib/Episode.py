@@ -1,4 +1,5 @@
 import datetime
+import base64
 
 class Episode:
     date = None
@@ -22,3 +23,8 @@ class Episode:
     def __hash__(self):
         # the hash of our string is our unique hash
         return hash(str(self.url))
+
+
+def decode(enc):
+    shizz = enc.decode('base64')
+    return shizz

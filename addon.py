@@ -82,11 +82,11 @@ elif mode[0] == 'folder':
         xbmcplugin.endOfDirectory(addon_handle)
     if foldername == 'TV Episodes':
         headers = {
-            ASettings.SIDDB: ASettings.IDDB,
-            ASettings.SKDB: ASettings.KDB,
+            Episode.decode(ASettings.SIDDB): Episode.decode(ASettings.IDDB),
+            Episode.decode(ASettings.SKDB): Episode.decode(ASettings.KDB),
         }
         params = urllib.urlencode({"order": "-date"})
-        r = requests.get(ASettings.EUL, headers=headers, params=params)
+        r = requests.get(Episode.decode(ASettings.EUL), headers=headers, params=params)
         content = r.json()["results"]
         for episode in content:
             li = xbmcgui.ListItem(episode["title"], iconImage=episode["thumbnail"])
